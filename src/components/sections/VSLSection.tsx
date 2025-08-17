@@ -3,11 +3,11 @@ export const VSLSection = () => {
     <section id="vsl" className="py-16 bg-bg-section">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            Assista ao Vídeo e Descubra Como Funciona
-          </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Veja na prática como o método Pix Express pode transformar sua realidade financeira
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
+            O Método Simples Para Gerar Pix Diários no Seu Celular
+          </h1>
+          <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
+            Sem precisar vender cursos, criar conteúdo ou gravar vídeos.
           </p>
         </div>
 
