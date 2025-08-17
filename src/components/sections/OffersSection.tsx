@@ -51,7 +51,16 @@ export const OffersSection = () => {
               </div>
             </div>
 
-            <Button variant="secondary" size="lg" className="w-full">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="w-full"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).iniciarCheckoutBasico) {
+                  (window as any).iniciarCheckoutBasico();
+                }
+              }}
+            >
               PEGAR ACESSO BÁSICO
             </Button>
           </div>
@@ -101,7 +110,16 @@ export const OffersSection = () => {
               </div>
             </div>
 
-            <Button variant="cta" size="lg" className="w-full">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="w-full"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).iniciarCheckoutVip) {
+                  (window as any).iniciarCheckoutVip();
+                }
+              }}
+            >
               SIM, QUERO O ACESSO VIP!
             </Button>
           </div>

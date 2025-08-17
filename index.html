@@ -17,6 +17,59 @@
     <meta name="twitter:title" content="Pix Express - Método Para Gerar Pix Diários" />
     <meta name="twitter:description" content="Método simples para gerar renda extra no celular" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    // Inicializa o Pixel com o seu ID
+    fbq('init', '1514386702444019');
+
+    // Evento PageView (dispara automaticamente)
+    fbq('track', 'PageView');
+
+    // Evento ViewContent (dispara no carregamento da página de vendas)
+    fbq('track', 'ViewContent', {
+        content_name: 'Página de Vendas Pix Express',
+        content_ids: ['PIXEXPRESS_VIP'],
+        content_type: 'product',
+        value: 27.00,
+        currency: 'BRL'
+    });
+
+    // --- FUNÇÕES PARA OS BOTÕES DE COMPRA ---
+
+    // Função para o botão de R$ 9,90 (Acesso Básico)
+    function iniciarCheckoutBasico() {
+      fbq('track', 'InitiateCheckout', {
+        content_name: 'Acesso Básico Pix Express',
+        content_ids: ['PEGAR ACESSO BÁSICO'],
+        value: 9.90,
+        currency: 'BRL'
+      });
+    }
+
+    // Função para o botão de R$ 27,00 (Acesso VIP)
+    function iniciarCheckoutVip() {
+      fbq('track', 'InitiateCheckout', {
+        content_name: 'Acesso VIP Pix Express',
+        content_ids: ['SIM, QUERO O ACESSO VIP!'],
+        value: 27.00,
+        currency: 'BRL'
+      });
+    }
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1514386702444019&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
 
   <body>

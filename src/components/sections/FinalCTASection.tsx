@@ -49,7 +49,16 @@ export const FinalCTASection = () => {
               </p>
             </div>
 
-            <Button variant="secondary" size="lg" className="w-full mb-4">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="w-full mb-4"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).iniciarCheckoutBasico) {
+                  (window as any).iniciarCheckoutBasico();
+                }
+              }}
+            >
               PEGAR ACESSO BÁSICO
             </Button>
             
@@ -88,7 +97,16 @@ export const FinalCTASection = () => {
               </p>
             </div>
 
-            <Button variant="cta" size="lg" className="w-full mb-4">
+            <Button 
+              variant="cta" 
+              size="lg" 
+              className="w-full mb-4"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).iniciarCheckoutVip) {
+                  (window as any).iniciarCheckoutVip();
+                }
+              }}
+            >
               SIM, QUERO O ACESSO VIP!
             </Button>
             
