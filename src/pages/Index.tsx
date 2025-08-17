@@ -1,3 +1,4 @@
+import { UrgencyBanner } from "@/components/sections/UrgencyBanner";
 import { VSLSection } from "@/components/sections/VSLSection";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { SolutionSection } from "@/components/sections/SolutionSection";
@@ -11,7 +12,9 @@ import { FooterSection } from "@/components/sections/FooterSection";
 const Index = () => {
   return (
     <main className="min-h-screen">
-      <VSLSection />
+      <UrgencyBanner />
+      <div className="pt-12">
+        <VSLSection />
       <ProblemSection />
       <SolutionSection />
       <OffersSection />
@@ -19,7 +22,8 @@ const Index = () => {
       <GuaranteeSection />
       <FAQSection />
       <FinalCTASection />
-      <FooterSection />
+        <FooterSection />
+      </div>
     </main>
   );
 };

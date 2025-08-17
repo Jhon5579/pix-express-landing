@@ -26,8 +26,8 @@ export const VSLSection = () => {
 
         {/* Call to action below video */}
         <div className="text-center mt-8">
-          <p className="text-lg text-text-secondary mb-6">
-            Depois de assistir ao vídeo, escolha seu plano abaixo:
+          <p className="text-lg text-red-600 font-bold mb-6">
+            🔥 APENAS 100 VAGAS DISPONÍVEIS - ÚLTIMAS HORAS!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
