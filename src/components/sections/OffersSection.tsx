@@ -3,10 +3,30 @@ import { Gift, Star } from "lucide-react";
 
 export const OffersSection = () => {
   const bonuses = [
-    "Guias de Copy Prontos",
-    "Roteiros de Abordagem",
-    "Mensagens Testadas",
-    "Templates Exclusivos"
+    {
+      title: "O Método Pix Rápido Passo a Passo",
+      description: "Sistema completo para fazer R$ 50 por dia usando apenas o seu telemóvel"
+    },
+    {
+      title: "Acesso ao Grupo VIP de Alunos", 
+      description: "Comunidade exclusiva para trocar experiências e tirar dúvidas"
+    },
+    {
+      title: "Bónus 1: 20 Frases de Impacto",
+      description: "Frases testadas para fechar mais vendas e convencer clientes"
+    },
+    {
+      title: "Bónus 2: Mensagens Prontas para WhatsApp",
+      description: "Templates prontos para copiar e colar nas suas vendas"
+    },
+    {
+      title: "Bónus 3: Como Fazer R$ 50 por Dia no Instagram",
+      description: "Estratégia específica para monetizar o Instagram rapidamente"
+    },
+    {
+      title: "E Mais 7 Bónus Incríveis",
+      description: "Arsenal completo de ferramentas para acelerar os seus resultados"
+    }
   ];
 
   return (
@@ -100,15 +120,14 @@ export const OffersSection = () => {
                 <span className="text-text-secondary">Todo o conteúdo do Acesso Básico</span>
               </div>
               {bonuses.map((bonus, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <Gift className="w-5 h-5 text-brand-primary flex-shrink-0" />
-                  <span className="text-text-secondary font-medium">{bonus}</span>
+                <div key={index} className="flex items-start gap-3">
+                  <Gift className="w-5 h-5 text-brand-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <span className="text-text-secondary font-medium block">{bonus.title}</span>
+                    <span className="text-text-muted text-sm">{bonus.description}</span>
+                  </div>
                 </div>
               ))}
-              <div className="flex items-center gap-3">
-                <Gift className="w-5 h-5 text-brand-primary flex-shrink-0" />
-                <span className="text-text-secondary font-medium">+ 6 bônus adicionais</span>
-              </div>
             </div>
 
             <Button 
