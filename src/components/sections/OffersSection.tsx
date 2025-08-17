@@ -8,10 +8,6 @@ export const OffersSection = () => {
       description: "Sistema completo para fazer R$ 50 por dia usando apenas o seu telemóvel"
     },
     {
-      title: "Acesso ao Grupo VIP de Alunos", 
-      description: "Comunidade exclusiva para trocar experiências e tirar dúvidas"
-    },
-    {
       title: "Bónus 1: 20 Frases de Impacto",
       description: "Frases testadas para fechar mais vendas e convencer clientes"
     },
