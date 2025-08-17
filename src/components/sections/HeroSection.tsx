@@ -3,10 +3,10 @@ import { ArrowDown } from "lucide-react";
 import heroPhone from "@/assets/hero-phone-mockup.jpg";
 
 export const HeroSection = () => {
-  const scrollToOffers = () => {
-    const offersSection = document.getElementById('offers');
-    if (offersSection) {
-      offersSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToVSL = () => {
+    const vslSection = document.getElementById('vsl');
+    if (vslSection) {
+      vslSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -46,10 +46,10 @@ export const HeroSection = () => {
           <Button 
             variant="cta" 
             size="xl"
-            onClick={scrollToOffers}
+            onClick={scrollToVSL}
             className="w-full max-w-md mx-auto"
           >
-            QUERO ACESSO IMEDIATO
+            ASSISTIR VÍDEO GRATUITO
             <ArrowDown className="w-5 h-5 animate-bounce" />
           </Button>
         </div>
@@ -57,7 +57,7 @@ export const HeroSection = () => {
         {/* Trust indicator */}
         <div className="pt-8">
           <p className="text-sm text-text-muted">
-            ⭐ Método validado • 🔒 Acesso imediato • 📱 Só precisa do celular
+            🎥 Vídeo gratuito de apresentação • 📱 Só precisa do celular • ⚡ Resultados rápidos
           </p>
         </div>
       </div>
