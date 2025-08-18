@@ -57,6 +57,7 @@ export const FinalCTASection = () => {
                 if (typeof window !== 'undefined' && (window as any).iniciarCheckoutBasico) {
                   (window as any).iniciarCheckoutBasico();
                 }
+                window.open('https://sun.eduzz.com/39ZQ344Z9E', '_blank');
               }}
             >
               PEGAR ACESSO BÁSICO
@@ -105,6 +106,7 @@ export const FinalCTASection = () => {
                 if (typeof window !== 'undefined' && (window as any).iniciarCheckoutVip) {
                   (window as any).iniciarCheckoutVip();
                 }
+                window.open('https://sun.eduzz.com/E05X211KWX', '_blank');
               }}
             >
               SIM, QUERO O ACESSO VIP!

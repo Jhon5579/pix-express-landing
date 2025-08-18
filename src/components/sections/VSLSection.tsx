@@ -15,7 +15,7 @@ export const VSLSection = () => {
         <div className="relative bg-background rounded-xl shadow-strong overflow-hidden">
           <div className="relative aspect-video">
             <iframe
-              src="https://www.youtube.com/embed/3fNz3HUz3Ow?si=cTFw52hT5g3ucNn7&rel=0&showinfo=0&modestbranding=1"
+              src="https://www.youtube.com/embed/3fNz3HUz3Ow?si=cTFw52hT5g3ucNn7&rel=0&showinfo=0&modestbranding=1&autoplay=1&mute=1"
               title="Pix Express - Video Sales Letter"
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -33,11 +33,21 @@ export const VSLSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => {
-                console.log('Button clicked, looking for offers section');
+                console.log('Button clicked, scrolling to offers');
                 const offersSection = document.getElementById('offers');
-                console.log('Offers section found:', offersSection);
+                console.log('Found offers section:', offersSection);
                 if (offersSection) {
-                  offersSection.scrollIntoView({ behavior: 'smooth' });
+                  offersSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
+                } else {
+                  console.log('Offers section not found, trying alternative scroll');
+                  // Fallback - scroll to a position where offers should be
+                  window.scrollTo({
+                    top: window.innerHeight * 2,
+                    behavior: 'smooth'
+                  });
                 }
               }}
               className="bg-brand-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-brand-primary-dark transition-all duration-300 shadow-cta hover:shadow-strong"
