@@ -67,6 +67,41 @@
     }
     </script>
     <!-- End Facebook Pixel Code -->
+
+    <!-- Facebook Click ID Tracking -->
+    <script>
+    (function() {
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        // Define o cookie para o domínio principal (ex: jmdiigitall.com.br)
+        var domainParts = window.location.hostname.split('.');
+        var domain = domainParts.slice(-2).join('.');
+        document.cookie = name + "=" + (value || "") + expires + "; path=/; domain=" + domain;
+      }
+
+      var fbc_param = getParameterByName('_fbc');
+      if (fbc_param) {
+        // O formato 'fb.1.timestamp.fbc_value' é o padrão esperado pelo Facebook
+        var fbc_cookie_value = 'fb.1.' + Date.now() + '.' + fbc_param;
+        setCookie('_fbc', fbc_cookie_value, 90); // O cookie expira em 90 dias
+      }
+    })();
+    </script>
   </head>
 
   <body>
