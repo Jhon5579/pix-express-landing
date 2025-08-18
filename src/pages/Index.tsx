@@ -7,7 +7,6 @@ import { OffersSection } from "@/components/sections/OffersSection";
 import { AuthoritySection } from "@/components/sections/AuthoritySection";
 import { ProofConceptSection } from "@/components/sections/ProofConceptSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { GuaranteeSection } from "@/components/sections/GuaranteeSection";
 import { ReinforcedGuaranteeSection } from "@/components/sections/ReinforcedGuaranteeSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
@@ -26,7 +25,6 @@ const Index = () => {
         <AuthoritySection />
         <ProofConceptSection />
         <TestimonialsSection />
-        <GuaranteeSection />
         <ReinforcedGuaranteeSection />
         <FAQSection />
         <FinalCTASection />
