@@ -2,9 +2,13 @@ import { UrgencyBanner } from "@/components/sections/UrgencyBanner";
 import { VSLSection } from "@/components/sections/VSLSection";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { SolutionSection } from "@/components/sections/SolutionSection";
+import { UrgencySection } from "@/components/sections/UrgencySection";
 import { OffersSection } from "@/components/sections/OffersSection";
+import { AuthoritySection } from "@/components/sections/AuthoritySection";
+import { ProofConceptSection } from "@/components/sections/ProofConceptSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { GuaranteeSection } from "@/components/sections/GuaranteeSection";
+import { ReinforcedGuaranteeSection } from "@/components/sections/ReinforcedGuaranteeSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { FooterSection } from "@/components/sections/FooterSection";
@@ -15,13 +19,17 @@ const Index = () => {
       <UrgencyBanner />
       <div className="pt-12">
         <VSLSection />
-      <ProblemSection />
-      <SolutionSection />
-      <OffersSection />
-      <TestimonialsSection />
-      <GuaranteeSection />
-      <FAQSection />
-      <FinalCTASection />
+        <ProblemSection />
+        <SolutionSection />
+        <UrgencySection />
+        <OffersSection />
+        <AuthoritySection />
+        <ProofConceptSection />
+        <TestimonialsSection />
+        <GuaranteeSection />
+        <ReinforcedGuaranteeSection />
+        <FAQSection />
+        <FinalCTASection />
         <FooterSection />
       </div>
     </main>
