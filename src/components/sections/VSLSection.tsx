@@ -26,19 +26,21 @@ export const VSLSection = () => {
 
         {/* Call to action below video */}
         <div className="text-center mt-8">
-          <p className="text-lg text-red-600 font-bold mb-6">
+          <p className="text-lg font-bold mb-6" style={{ color: '#dc2626' }}>
             🔥 APENAS 100 VAGAS DISPONÍVEIS - ÚLTIMAS HORAS!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => {
+                console.log('Button clicked, looking for offers section');
                 const offersSection = document.getElementById('offers');
+                console.log('Offers section found:', offersSection);
                 if (offersSection) {
                   offersSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-brand-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-primary-dark transition-all duration-300 shadow-cta hover:shadow-strong"
+              className="bg-brand-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-brand-primary-dark transition-all duration-300 shadow-cta hover:shadow-strong"
             >
               Ver Ofertas Especiais
             </button>
