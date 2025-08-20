@@ -10,19 +10,19 @@ import {
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      image: "/lovable-uploads/61d85995-6dc3-48c7-886b-e4a72103cba3.png",
+      image: "/lovable-uploads/f9db11ba-703c-4527-ae1b-dcd0ca2bdbf3.png",
       author: "Marcos",
       result: "R$ 80 no primeiro dia",
       rating: 5
     },
     {
-      image: "/lovable-uploads/7c6654b4-4bfb-4ffb-bd63-c38b71451166.png",
+      image: "/lovable-uploads/272424c0-2063-4593-979b-bd98bc3f2b40.png",
       author: "Camila", 
       result: "R$ 250 por semana",
       rating: 5
     },
     {
-      image: "/lovable-uploads/c8030ca5-f2f9-4258-8e7c-bba58a018677.png",
+      image: "/lovable-uploads/fce50e4e-aae9-4bbf-8dfd-05001a1d9c44.png",
       author: "Fernanda",
       result: "R$ 50 no mesmo dia",
       rating: 5
