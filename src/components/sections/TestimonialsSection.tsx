@@ -10,33 +10,21 @@ import {
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Consegui meu primeiro resultado em 48h! Finalmente algo que funciona de verdade. Eu estava cética no início, mas o método é realmente simples de seguir.",
-      author: "Maria S.",
-      result: "Primeiro Pix em 2 dias",
+      text: "Cara, só passando pra agradecer. Comprei seu guia ontem meio na dúvida e já fiz R$ 80 no Pix hoje! As dicas são muito diretas.",
+      author: "Marcos",
+      result: "R$ 80 no primeiro dia",
       rating: 5
     },
     {
-      text: "Simples demais! Não precisei aparecer nem criar conteúdo. Só seguir o passo a passo. Perfeito para quem tem vergonha de aparecer online.",
-      author: "João P.", 
-      result: "Método aplicado com sucesso",
+      text: "Eu preciso de uma renda extra e com uma das suas dicas já estou fazendo R$ 250 a mais por semana. Nem acredito!",
+      author: "Camila", 
+      result: "R$ 250 por semana",
       rating: 5
     },
     {
-      text: "Era exatamente o que eu precisava. Direto ao ponto, sem enrolação. Funcionou muito melhor do que imaginei.",
-      author: "Ana L.",
-      result: "Resultado imediato",
-      rating: 5
-    },
-    {
-      text: "Estava desempregada e precisava de uma renda extra urgente. O método me ajudou a conseguir isso sem sair de casa.",
-      author: "Carla M.",
-      result: "Renda extra conquistada",
-      rating: 5
-    },
-    {
-      text: "Achei que era mais uma promessa falsa, mas decidi tentar. Que bom que tentei! Recomendo para qualquer pessoa.",
-      author: "Roberto F.",
-      result: "Superou expectativas",
+      text: "Moço, não sei nem como te agradecer! Eu era totalmente leiga no assunto. Comprei seu material e no mesmo dia fiz meus primeiros 50 reais. Pra mim foi uma vitória enorme!",
+      author: "Fernanda",
+      result: "R$ 50 no mesmo dia",
       rating: 5
     }
   ];
