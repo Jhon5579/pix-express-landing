@@ -17,10 +17,10 @@ export const VSLSection = () => {
         <div className="relative bg-background rounded-xl shadow-soft overflow-hidden">
           <div className="relative aspect-video">
             <LazyIframe
-              src="https://www.youtube.com/embed/3fNz3HUz3Ow?si=cTFw52hT5g3ucNn7&rel=0&showinfo=0&modestbranding=1"
+              src="https://www.youtube.com/embed/3fNz3HUz3Ow?si=cTFw52hT5g3ucNn7&rel=0&showinfo=0&modestbranding=1&autoplay=1&mute=1"
               title="Pix Express - Video Sales Letter"
               className="absolute inset-0 w-full h-full"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />
           </div>
