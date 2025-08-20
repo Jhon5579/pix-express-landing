@@ -10,19 +10,19 @@ import {
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Cara, só passando pra agradecer. Comprei seu guia ontem meio na dúvida e já fiz R$ 80 no Pix hoje! As dicas são muito diretas.",
+      image: "/lovable-uploads/61d85995-6dc3-48c7-886b-e4a72103cba3.png",
       author: "Marcos",
       result: "R$ 80 no primeiro dia",
       rating: 5
     },
     {
-      text: "Eu preciso de uma renda extra e com uma das suas dicas já estou fazendo R$ 250 a mais por semana. Nem acredito!",
+      image: "/lovable-uploads/7c6654b4-4bfb-4ffb-bd63-c38b71451166.png",
       author: "Camila", 
       result: "R$ 250 por semana",
       rating: 5
     },
     {
-      text: "Moço, não sei nem como te agradecer! Eu era totalmente leiga no assunto. Comprei seu material e no mesmo dia fiz meus primeiros 50 reais. Pra mim foi uma vitória enorme!",
+      image: "/lovable-uploads/c8030ca5-f2f9-4258-8e7c-bba58a018677.png",
       author: "Fernanda",
       result: "R$ 50 no mesmo dia",
       rating: 5
@@ -60,11 +60,14 @@ export const TestimonialsSection = () => {
                       ))}
                     </div>
                     
-                    <Quote className="w-8 h-8 text-brand-primary mb-4" />
-                    
-                    <p className="text-text-secondary leading-relaxed mb-6 flex-grow">
-                      "{testimonial.text}"
-                    </p>
+                    {/* Testimonial Image */}
+                    <div className="mb-6 flex-grow">
+                      <img 
+                        src={testimonial.image} 
+                        alt={`Depoimento de ${testimonial.author}`}
+                        className="w-full max-w-sm mx-auto rounded-lg shadow-md"
+                      />
+                    </div>
                     
                     <div className="border-t border-card-border pt-4">
                       <p className="font-semibold text-text-primary">
