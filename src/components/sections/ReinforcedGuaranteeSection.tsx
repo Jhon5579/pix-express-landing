@@ -1,29 +1,30 @@
 import { Shield, CheckCircle } from "lucide-react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import guaranteeBadge from "@/assets/guarantee-badge-optimized.jpg";
 
 export const ReinforcedGuaranteeSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white viewport-optimized">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gray-50 border-2 border-primary/20 rounded-xl p-8 text-center">
+          <div className="bg-gray-50 border-2 border-brand-primary/20 rounded-xl p-8 text-center">
             {/* Guarantee Badge */}
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center">
-                  <Shield className="w-12 h-12 text-white" />
-                </div>
-                <div className="absolute -top-2 -right-2">
-                  <CheckCircle className="w-8 h-8 text-green-500 bg-white rounded-full" />
-                </div>
-                <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">
-                  7 DIAS
-                </div>
+                <OptimizedImage
+                  src={guaranteeBadge}
+                  alt="Garantia de 7 dias - 100% do dinheiro de volta"
+                  className="w-24 h-24 rounded-full"
+                  width={96}
+                  height={96}
+                  priority
+                />
               </div>
             </div>
             
             {/* Content */}
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Seu Risco é Absolutamente <span className="text-primary">ZERO</span>
+              Seu Risco é Absolutamente <span className="text-brand-primary">ZERO</span>
             </h2>
             
             <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">

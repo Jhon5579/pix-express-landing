@@ -126,12 +126,38 @@ All colors MUST be HSL for optimal design system consistency.
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+/* Performance-optimized animations and critical path CSS */
+@layer utilities {
+  /* Above-the-fold critical styles */
+  .critical-render {
+    contain: layout style paint;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  /* Lazy loading optimization */
+  .lazy-load {
+    will-change: auto;
+    transform: translateZ(0);
+  }
+
+  /* Performance-focused transitions */
+  .transition-fast {
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .hover-scale,
+    .transition-fast {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  /* Critical viewport optimizations */
+  .viewport-optimized {
+    contain: layout;
+    content-visibility: auto;
   }
 }
