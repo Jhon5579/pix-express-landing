@@ -22,9 +22,9 @@ const Index = () => {
         <SolutionSection />
         <UrgencySection />
         <OffersSection />
+        <TestimonialsSection />
         <AuthoritySection />
         <ProofConceptSection />
-        <TestimonialsSection />
         <ReinforcedGuaranteeSection />
         <FAQSection />
         <FinalCTASection />
